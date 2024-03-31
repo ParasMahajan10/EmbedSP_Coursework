@@ -1,5 +1,5 @@
 #include "mbed.h"
-#include "ESPRobot.h"
+#include "RobotCar.h"
 
 /*
 DIRECTION CONTROL PIN CONFIG
@@ -63,7 +63,7 @@ Ticker timer;
 int main(){
 //Take_turn(0.00, 0.00);
 
-ESPRobot robot(PB_10, PB_4, PB_3, PB_5, PA_8, PC_7);
+RobotCar robot(PB_10, PB_4, PB_3, PB_5, PA_8, PC_7);
 
 float IrVoltage = 0.0; //// sens init!
  float IrVoltage2 = 0.0;
